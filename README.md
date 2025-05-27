@@ -49,45 +49,37 @@ Follow these steps to set up the project locally:
 - **Deployment**: Supports deployment on Netlify, Vercel, etc.
 
 ## 📁 Project Structure
-'''
+
 hospital_management/
-│
-├── public/              # Public assets
-│   └── [index.html]       # HTML template
-│
-├── src/                 # Source files
-│   ├── assets/          # Static assets
-│   │   ├── css/         # CSS files
-│   │   └── images/      # Image files
-│   │
-│   ├── components/      # Reusable components
-│   │   ├── [AppointmentForm.js]
-│   │   ├── [EmergencyRibbon.js]
-│   │   ├── [Footer.js]
-│   │   ├── [LiveChat.js]
-│   │   └── [Navbar.js]
-│   │
-│   ├── pages/           # Page components
-│   │   ├── services/    # Service-specific pages
+├── public/                 # Public assets
+│   └── index.html          # HTML template
+├── src/                    # Source files
+│   ├── assets/             # Static assets
+│   │   ├── css/            # CSS files
+│   │   └── images/         # Image files
+│   ├── components/         # Reusable components
+│   │   ├── AppointmentForm.js
+│   │   ├── EmergencyRibbon.js
+│   │   ├── Footer.js
+│   │   ├── LiveChat.js
+│   │   └── Navbar.js
+│   ├── pages/              # Page components
+│   │   ├── services/       # Service-specific pages
 │   │   │   ├── GeneralDentistry.js
-│   │   │   ├── [CosmeticDentistry.js]
-│   │   │   └── ...
-│   │   │
-│   │   ├── [About.js]
+│   │   │   └── CosmeticDentistry.js
+│   │   ├── About.js
 │   │   ├── AdminDashboard.js
-│   │   ├── [Contact.js]
-│   │   ├── [Home.js]
-│   │   └── ...
-│   │
-│   ├── App.js           # Main app component
-│   ├── [index.js]         # Application entry point
-│   └── [index.css]        # Global styles
-│
-├── .gitignore           # Git ignore file
-├── [package.json]       # npm package config
-├── [README.md]          # This file
-└── LICENSE              # MIT License
-'''
+│   │   ├── Contact.js
+│   │   └── Home.js
+│   ├── App.js              # Main app component
+│   └── index.js            # Application entry point
+├── index.css               # Global styles
+├── .gitignore              # Git ignore file
+├── package.json            # npm package config
+├── README.md               # This file
+└── LICENSE                 # MIT License
+
+
 ## 🔍 Usage
 
 # Patient Flow
