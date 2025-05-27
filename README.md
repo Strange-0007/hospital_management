@@ -49,7 +49,7 @@ Follow these steps to set up the project locally:
 - **Deployment**: Supports deployment on Netlify, Vercel, etc.
 
 ## 📁 Project Structure
-
+'''
 hospital_management/
 │
 ├── public/              # Public assets
@@ -87,7 +87,7 @@ hospital_management/
 ├── [package.json]       # npm package config
 ├── [README.md]          # This file
 └── LICENSE              # MIT License
-
+'''
 ## 🔍 Usage
 
 # Patient Flow
