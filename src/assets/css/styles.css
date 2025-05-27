@@ -1,0 +1,192 @@
+:root {
+  --primary-blue: #2A5C82;
+  --accent-teal: #17A2B8;
+  --emergency-red: #DC3545;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  padding-top: 60px;
+}
+
+/* Navigation Styles */
+.navbar {
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.97) !important;
+  backdrop-filter: blur(5px);
+}
+
+.nav-link {
+  color: var(--primary-blue) !important;
+  font-weight: 500;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-teal);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Emergency Ribbon */
+.emergency-ribbon {
+  background: var(--emergency-red);
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.emergency-ribbon a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 120px 0 60px;
+  background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Service Cards */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact-card {
+  background: rgba(255,255,255,0.97);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px) perspective(1000px) rotateX(2deg) rotateY(-1deg);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+}
+
+/* Contact Icons */
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+  background: var(--accent-teal);
+  color: white !important;
+  transform: scale(1.05);
+}
+
+/* Form Elements */
+.form-control {
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid rgba(42,92,130,0.1);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(23,162,184,0.2);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary-blue);
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-teal);
+  transform: translateY(-2px);
+}
+
+/* Team Member Cards */
+.team-member-card {
+  border: none;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+}
+
+/* 3D Hover Effect */
+.hover-3d {
+  transition: transform 0.3s ease;
+}
+
+.hover-3d:hover {
+  transform: translateY(-10px);
+}
+
+/* FAQ Page */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-blue);
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1rem;
+}
+
+.faq-item h5 {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.faq-item p {
+  color: #6c757d;
+}
+
+/* Terms and Conditions Page */
+.content {
+  color: #6c757d;
+  line-height: 1.8;
+}

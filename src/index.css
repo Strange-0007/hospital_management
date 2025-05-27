@@ -1,0 +1,17 @@
+:root {
+  --primary-blue: #2A5C82;
+  --accent-teal: #17A2B8;
+  --emergency-red: #DC3545;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+/* Common styles for all pages */
+.hover-3d {
+  transition: transform 0.3s ease;
+}
+
+.hover-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+}
+
+/* Service Card Styles */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Navigation Styles */
+.navbar {
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.97) !important;
+  backdrop-filter: blur(5px);
+}
+
+.nav-link {
+  color: var(--primary-blue) !important;
+  font-weight: 500;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-teal);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Emergency Ribbon */
+.emergency-ribbon {
+  background: var(--emergency-red);
+  color: white;
+  padding: 10px 0;
+  transform: rotate(2deg);
+  position: relative;
+  top: -30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
